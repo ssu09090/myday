@@ -13,6 +13,14 @@ const Time = () => {
   },[])
   return (
     <div className="time">
+      <p>
+        {time.toLocaleDateString("ko-KR", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          weekday: "long",
+        })}
+      </p>
       {time.toLocaleTimeString("ko-KR")}
       {/* {time.toLocaleTimeString('en-US',{
         hour: '2-digit',
