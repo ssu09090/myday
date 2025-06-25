@@ -24,6 +24,8 @@ body {
   font-size: 62.5%;
   position: relative;
   font-family: $sub-font;
+  word-break: keep-all;
+  text-align: center;
 }
 button {
   border: none;
@@ -117,6 +119,7 @@ input:focus::placeholder {
   background-size: cover;
   background-position: center;
   position: relative;
+  
   .center {
     position: absolute;
     top: 7rem;
@@ -178,6 +181,8 @@ input:focus::placeholder {
   align-items: center;
   gap: 1.5rem;
   font-size: 1rem;
+  .quote{
+  }
   .hello {
     display: flex;
     gap: 1rem;
