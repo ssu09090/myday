@@ -122,7 +122,7 @@ const App = () => {
       </div>
       <Weather />
       {/* <img src={bgImg} alt="bgimg2" /> */}
-      <div className="center">
+      <div className={user ? "logged-in" : "center"}>
         <Time />
         {user ? (
           <MainPage user={user} onLogout={handleLogout} />

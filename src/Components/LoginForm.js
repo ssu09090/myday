@@ -10,8 +10,12 @@ const LoginForm = ({ onLogin }) => {
       setUser("");
     }
   };
+
   return (
-    <form onSubmit={handleSubmit} className="login">
+    <form
+      onSubmit={handleSubmit}
+      className="login"
+    >
       <h2>사용자 이름을 입력해주세요</h2>
       <div className="name_box">
         <div className="play">
