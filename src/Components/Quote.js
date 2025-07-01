@@ -27,7 +27,11 @@ const Quote = () => {
     const random = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[random]);
   }, []);
-  return <div>오늘의 명언 : "{quote}"</div>;
+  return (
+    <div className="quote">
+      오늘의 명언 <br /> "{quote}"
+    </div>
+  );
 };
 
 export default Quote;

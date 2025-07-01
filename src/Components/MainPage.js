@@ -89,7 +89,7 @@ const MainPage = ({ user, onLogout }) => {
         </h2>
         <button onClick={onLogout}>나가기</button>
       </div>
-      <Quote className="quote"/>
+      <Quote/>
       <div className="tm">
         <div className="todo">
           <TodoForm onAdd={addTodo} />
